@@ -1,0 +1,72 @@
+-- Retail Profitability & Cost Optimization Analysis
+-- Dataset: Sample Superstore
+-- Tools Used: SQL
+
+
+-- Profit by Category
+SELECT category, SUM(profit) AS total_profit
+FROM SampleSuperstore
+GROUP BY category
+ORDER BY total_profit DESC;
+
+-- Sales by Region
+SELECT region, SUM(sales) AS total_sales
+FROM SampleSuperstore
+GROUP BY region
+ORDER BY total_sales DESC;
+
+-- Segment Performance
+SELECT segment,
+       SUM(sales) AS total_sales,
+       SUM(profit) AS total_profit,
+       COUNT(order_id) AS total_orders
+FROM SampleSuperstore
+GROUP BY segment
+ORDER BY total_profit DESC;
+
+-- Sub-category Profit Ranking
+SELECT sub_category,
+       SUM(profit) AS total_profit
+FROM SampleSuperstore
+GROUP BY sub_category
+ORDER BY total_profit DESC;
+
+-- Unique Customers per Segment
+SELECT segment,
+       COUNT(DISTINCT customer_id) AS unique_customers
+FROM SampleSuperstore
+GROUP BY segment
+ORDER BY unique_customers DESC;
+
+-- High Discount Impact
+SELECT category,
+       AVG(discount) AS avg_discount,
+       SUM(profit) AS total_profit
+FROM SampleSuperstore
+GROUP BY category
+HAVING AVG(discount) > 0.2
+ORDER BY total_profit ASC;
+
+-- Top 10 Most Profitable Products
+SELECT product_name,
+       SUM(profit) AS total_profit
+FROM SampleSuperstore
+GROUP BY product_name
+ORDER BY total_profit DESC
+LIMIT 10;
+
+-- Top 10 Loss-Making Products
+SELECT product_name,
+       SUM(profit) AS total_profit
+FROM SampleSuperstore
+GROUP BY product_name
+ORDER BY total_profit ASC
+LIMIT 10;
+
+-- State-wise Profitability
+SELECT state,
+       SUM(sales) AS total_sales,
+       SUM(profit) AS total_profit
+FROM SampleSuperstore
+GROUP BY state
+ORDER BY total_profit DESC;
