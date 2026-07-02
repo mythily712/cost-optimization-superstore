@@ -2,7 +2,7 @@
 
 A data analysis project identifying cost and discount inefficiencies in retail sales data using SQL, Excel, and Power BI, with actionable recommendations to improve profit margins.
 
-# Executive Summary
+## Executive Summary
 
 This project identifies key profitability leaks in a retail superstore by analyzing sales, cost, and discount structures. The analysis reveals that discounting strategy and product mix are the primary drivers of margin erosion. Strategic optimization of pricing thresholds and product portfolio can significantly improve overall business profitability.
 
@@ -25,12 +25,12 @@ Based on the analysis, implementing discount caps and restructuring loss-making 
 
 1. **Pricing Strategy Optimization**
   - Implement discount threshold policy (>20% flagged for approval)
-  -Introduce dynamic discounting for low-margin categories
+  - Introduce dynamic discounting for low-margin categories
 2. **Product Portfolio Optimization**
-  -Review and potentially discontinue loss-making sub-category (Tables)
-  -Reallocate focus to high-margin SKUs within Furniture category
+  - Review and potentially discontinue loss-making sub-category (Tables)
+  - Reallocate focus to high-margin SKUs within Furniture category
 3. **Regional Performance Strategy**
-  -Investigate regional underperformance drivers (logistics vs demand mismatch)
+  - Investigate regional underperformance drivers (logistics vs demand mismatch)
 
 ## Tools Used
 
