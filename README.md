@@ -1,24 +1,36 @@
-# Cost & Profitability Optimization Analysis — Retail Superstore
+# Retail Profitability & Discount Optimization Intelligence System
 
 A data analysis project identifying cost and discount inefficiencies in retail sales data using SQL, Excel, and Power BI, with actionable recommendations to improve profit margins.
 
+# Executive Summary
+
+This project identifies key profitability leaks in a retail superstore by analyzing sales, cost, and discount structures. The analysis reveals that discounting strategy and product mix are the primary drivers of margin erosion. Strategic optimization of pricing thresholds and product portfolio can significantly improve overall business profitability.
+
 ## Overview
 
-This project analyzes order-level sales data to uncover where cost and discounting practices are eroding profitability — by category, sub-category, region, and customer segment — and translates the findings into specific, actionable recommendations.
+This project simulates a retail business performance audit aimed at identifying revenue leakage, discount inefficiencies, and low-margin product segments. The goal is to transform raw sales data into actionable business decisions that improve overall profitability and pricing strategy.
 
 ## Key Findings
 
 - **$2.3M** in total sales generated **$286K** in profit (**12.5%** profit margin), with an average discount rate of **15.6%**
-- Discounts above **20%** consistently pushed profit negative across nearly all categories
-- **Furniture** had the lowest profit of all three categories despite carrying the *highest* average discount rate
-- **Tables** was the only sub-category running a net loss — the clearest single fix opportunity
+- Discounts above **20%** consistently lead to negative margin contribution, indicating a critical threshold for discount policy optimization.
+- **Furniture** category shows structurally weak profitability due to **high discount** dependency and should be reviewed for pricing and cost restructuring.
+- **Tables** sub-category is a persistent **loss-making** segment and should be considered for either pricing correction,    supplier renegotiation, or product discontinuation.
 - Consumer segment drives the largest share of sales (**50.6%**), followed by Corporate (**30.7%**) and Home Office (**18.7%**)
+
+## Business Impact Simulation 
+Based on the analysis, implementing discount caps and restructuring loss-making sub-categories could potentially improve profit margins and reduce revenue leakage across underperforming segments.
 
 ## Recommendations
 
-1. Cap or restructure discounting on Furniture — particularly Tables — where margin is already thin
-2. Review pricing/discount policy for any order exceeding 20% discount, given the consistent profit drop-off past that threshold
-3. Prioritize cost-efficiency review on the lowest-performing regions and sub-categories identified in the SQL analysis
+1. **Pricing Strategy Optimization**
+  - Implement discount threshold policy (>20% flagged for approval)
+  -Introduce dynamic discounting for low-margin categories
+2. **Product Portfolio Optimization**
+  -Review and potentially discontinue loss-making sub-category (Tables)
+  -Reallocate focus to high-margin SKUs within Furniture category
+3. **Regional Performance Strategy**
+  -Investigate regional underperformance drivers (logistics vs demand mismatch)
 
 ## Tools Used
 
