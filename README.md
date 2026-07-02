@@ -48,7 +48,7 @@ Based on the analysis, implementing discount caps and restructuring loss-making 
 
 ## Dashboard Preview
 
-*(screenshots go here once uploaded)*
+![Dashboard](dashboard.png)
 
 ## Live Dashboard
 
